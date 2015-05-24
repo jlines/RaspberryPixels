@@ -82,6 +82,22 @@ PixelBuffer.prototype.setPixel = function(i, pixel){
 }
 
 /**
+ * Fill the entire pixel strand with a specific color
+ * @param  {Color} 
+ */
+PixelBuffer.prototype.setColor = function(i, c) {
+    this.setRGB(i, c.g, c.r, c.b);
+}
+
+/**
+ * Fill the entire pixel strand with a specific color
+ * @param  {Color} 
+ */
+PixelBuffer.prototype.fillColor = function(c) {
+    this.fillRGB(c.g, c.r, c.b);
+}
+
+/**
  * Fill the entire pixel strand with a specific RGB color
  * @param  {number} r Red value
  * @param  {number} g Green value
